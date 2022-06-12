@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/reset.css">
+    <title>Série Aleatória</title>
+    <style>
+        * {
+            margin: 0%;
+            padding: 0%;
+        }
+        
+        html, body { 
+            height: 100%;
+            width: 100%;
+            background-color: #131313;
+        }
+
+        body {
+            min-width: 300px;
+        }
+
+        header {
+            width: 1366px;
+            height: 70;
+            background-color: #131313;
+            color: #E50914;
+            font-size: 40px;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+        }
+
+        header p {
+            padding-top: 15px;
+            padding-left: 19px;
+        }
+
+        header a{
+            color: #E50914;
+        }
+        
+        header a:visited{
+            color: #E50914;
+        }
+
+        main {
+            display: inline-flex;
+            padding-left: 19px;
+            padding-top: 19px;
+        }
+
+        section {
+            width: 80%;
+            display: block;
+            padding-left: 19px;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            color: honeydew;
+        }
+
+        section h2 {
+            padding-top: 19px;
+            font-size: 20px;
+        }
+
+        img {
+            width: 300px;
+            height: 400px;
+        }
+    
+    </style>
+
+</head>
+<body>
+    <header>
+        <a href="http://127.0.0.1:5000/" style="text-decoration:none;">
+            <p>Home</p>
+        </a>
+    </header>
+
+    <main>
+        <img src="{{ show_info['showPoster'] }}" alt="poster">
+        <section>
+            <h2><b>Série:</b> {{ show_info['showName'] }}</h2>
+            <h2><b>Sinopse:</b> {{ show_info['showSummary'] }}</h2>
+            <h2>Nota: {{ show_info['showRating'] }}</h2>
+        </section>
+    </main>    
+</body>
+</html>
+
+
+<!-- <style>
+        img {
+            width: 200px;
+            height: 300px;
+        }
+
+</style>
+
+
+<body>
+    <div class="content">
+       <img src="{{ show_info['showPoster'] }}" alt="Poster">
+       <p><b>Série:</b> {{ show_info['showName'] }}</p>
+       <p><b>Sinopse:</b> {{ show_info['showSummary'] }}</p>
+       <p><b>Nota:</b> {{ show_info['showRating'] }}</p>
+     </div>
+</body>
+</html> -->

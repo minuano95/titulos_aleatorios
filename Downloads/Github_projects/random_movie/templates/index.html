@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/reset.css">
+    <title>Série Aleatória</title>
+    <style>
+        * {
+            margin: 0%;
+            padding: 0%;
+        }
+        
+        html, body { 
+            height: 100%;
+            width: 100%;
+            background-color: #131313;
+        }
+
+        body {
+            min-width: 300px;
+        }
+
+        header {
+            width: 1366px;
+            height: 70px;
+            background-color: #131313;
+            color: #E50914;
+            font-size: 40px;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+        }
+
+        header p {
+            padding-top: 15px;
+            padding-left: 19px;
+        }
+
+        header a{
+            color: #E50914;
+        }
+        
+        header a:visited{
+            color: #E50914;
+        }
+
+        .media-wrapper {
+            position: absolute;
+            white-space: nowrap;
+            overflow: hidden;
+        }
+
+        main {
+            color: azure;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+        
+        main h1 {
+            padding-top: 19px;
+            text-align: center;
+            font-size: 35px;
+        }
+        
+        section {
+            display: inline-flex;
+            padding-top: 10px;
+            padding-left: 295px;
+            height: 30%;
+            width: 100%;
+            text-align: center;
+            /* border: 3px solid #E50914; */
+
+        }
+
+        section div {
+            width: 150px;
+            /* border: 3px solid #73AD21; */
+
+        }
+
+        section h2 {
+            padding-top: 20%;
+            font-size: 22px;
+        }
+
+        .checkbox-style{
+            padding-top: 8%;
+        }
+
+        .btn-form {
+            padding-left: 44%;
+            padding-top: 2%;
+        }
+
+        .btn-submit-form {
+            padding-left: 5%;
+            padding-right: 5%;
+            font-size: 110%;
+            background-color: azure;
+        }
+
+    </style>
+
+</head>
+<body>
+    <header>
+        <a href="http://127.0.0.1:5000/" style="text-decoration:none;">
+            <p>Home</p>
+        </a>
+    </header>
+    <div>
+    <main>
+        <h1>Qual seu humor hoje?</h1>
+        <form method="post" action="http://127.0.0.1:5000/recommendation">
+            <section>
+                <div class="humor-form">
+                    <h2>Estressado</h2>
+                    <div class="checkbox-style">
+                        <input type="checkbox" name="humor" value="estressado"> 
+                    </div>
+                </div>
+                
+                <div class="humor-form">
+                    <h2>Calmo</h2>
+                    <div class="checkbox-style">
+                        <input type="checkbox" name="humor" value="calmo"> 
+                    </div>
+                </div>
+                
+                <div class="humor-form">
+                    <h2>Alegre</h2>
+                    <div class="checkbox-style">
+                        <input type="checkbox" name="humor" value="alegre"> 
+                    </div>
+                </div>
+                
+                <div class="humor-form">
+                    <h2>Indeciso</h2>
+                    <div class="checkbox-style">
+                        <input type="checkbox" name="humor" value="indeciso"> 
+                    </div>
+                </div>
+
+                <div class="humor-form">
+                    <h2>Triste</h2>
+                    <div class="checkbox-style">
+                        <input type="checkbox" name="humor" value="triste"> 
+                    </div>
+                </div>
+            </section>
+
+            <div class="btn-form">
+                <input class="btn-submit-form" type="submit" value="Procurar">
+            </div>  
+
+        </form>
+        </div>
+    </main>   
+    </div> 
+</body>
+</html>
